@@ -2,7 +2,8 @@
 # require('rock_paper_scissors')
 require ('./lib/rock_paper_scissors.rb')
 
-# -----for simplified verison----
+# -----simplified verison----
+
 game = RPS.new()
 puts "Player One enter rock, paper, or scissors"
 player_one = gets.chomp
