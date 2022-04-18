@@ -27,6 +27,8 @@ require('pry')
 #------------------- score version -------------------
 
 class RPS
+  # using attributes to simplify code (reader/writer method)
+  attr_accessor(:player_one_score, :player_two_score)
 def initialize()
   hand = ['rock', 'paper', 'scissors']
   # @player_one = player_one
@@ -40,23 +42,23 @@ def initialize()
 end
 
 # reader method
-def player_one_score
-  @player_one_score
-end
+# def player_one_score
+#   @player_one_score
+# end
 
-def player_two_score
-  @player_two_score
-end
+# def player_two_score
+#   @player_two_score
+# end
 
 
 # writer method
-def player_one_score=(score)
-  @player_one_score += score
-end
+# def player_one_score=(score)
+#   @player_one_score += score
+# end
 
-def player_two_score=(score)
-  @player_two_score += score
-end
+# def player_two_score=(score)
+#   @player_two_score += score
+# end
 
 def wins?(player_one_decision, player_two_decision)
 # hand = ['rock', 'paper', 'scissors']
